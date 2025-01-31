@@ -14,6 +14,9 @@ namespace exercise.wwwapi.Models
         [Column("email")]
         public string Email { get; set; }
 
+        [Column("role")]
+        public string Role { get; set; }
+
         public ICollection<BlogPost> Posts { get; set; } = [];
     }
 }
